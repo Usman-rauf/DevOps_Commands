@@ -1,0 +1,1 @@
+netstat -na | grep PORT (TO CHECK PORT IS LISTENING OR NOT)
