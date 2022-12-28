@@ -1,1 +1,7 @@
 kubectl delete daemonsets,replicasets,services,deployments,pods,rc,ingress --all --all-namespaces
+kubectl label pod (pod name) name=usman
+kubectl get pod --show-label
+kubectl get pod -l name=usman "equality base selector"
+kubectl get pod '-l env in(usman,ibrahim)' "set base selector"
+kubectl get pod '-l env notin(usman,ibrahim)' "set base selector"
+kubectl delete pod '-l env in(usman,ibrahim)'
