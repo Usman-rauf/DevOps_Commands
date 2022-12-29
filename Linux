@@ -1,1 +1,4 @@
-netstat -na | grep PORT (TO CHECK PORT IS LISTENING OR NOT)
+sudo netstat -tulpn | grep LISTEN
+fuser 8000/tcp (check PID)
+kill -9 (kill PID)
+
