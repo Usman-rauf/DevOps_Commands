@@ -6,3 +6,6 @@ kubectl get pod '-l env in(usman,ibrahim)' "set base selector"
 kubectl get pod '-l env notin(usman,ibrahim)' "set base selector"
 kubectl delete pod '-l env in(usman,ibrahim)'
 kubectl describe pod "pod name"
+kubectl get rs
+kubectl get rc
+kubectl  scale --replicas=2 rc -l env=dev
